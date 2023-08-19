@@ -11,7 +11,7 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   padding: 0 80px;
-  background:  ${({ theme }) => theme.COLORS.PURP}
+  background:  ${({ theme }) => theme.COLORS.PURPLE}
 `;
 
 export const Profile = styled(Link)`
@@ -21,6 +21,7 @@ export const Profile = styled(Link)`
     width: 56px;
     height: 56px;
     border-radius: 50%;
+    border: 2px solid ${({ theme }) => theme.COLORS.GRAY_300 }
   }
   > div {
     display: flex;
@@ -29,11 +30,11 @@ export const Profile = styled(Link)`
     line-height: 24px;
     span {
       font-size: 14px;
-      color: ${({ theme }) => theme.COLORS.GRAY_100}
+      color: ${({ theme }) => theme.COLORS.BACKGROUND_800}
     }
     strong {
       font-size: 18px;
-      color: ${({ theme }) => theme.COLORS.WHITE}
+      color: ${({ theme }) => theme.COLORS.BACKGROUND_700}
     }
   }
 `;
